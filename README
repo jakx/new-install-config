@@ -1,0 +1,4 @@
+run make install
+
+currently adds to a new installation of  ubuntu or derivative
+    1) enables ctrl alt backspace to kill x
