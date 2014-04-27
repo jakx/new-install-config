@@ -1,4 +1,17 @@
-run make install
 
-currently adds to a new installation of  ubuntu or derivative
-    1) enables ctrl alt backspace to kill x
+clone and run from the cloned directory 'make install' to install
+
+    1) sets up bashrc with useful shortcuts
+       adds:
+        *'vib' command - edit .bashrc with vi
+        *'sob' command - source .bashrc
+        *'psmem' command - list processes and sort by memory usage 
+        *'pscpu' command - list processes and sort by cpu usage 
+
+    2) sets up vimrc 
+        *modifies tab to be four spaces
+        *restores cursor on a previously edited file
+
+    3) enables ctrl alt backspace to kill x for an ubuntu derivative operating system
+    
+    
