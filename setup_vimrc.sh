@@ -38,5 +38,13 @@ fi
 if ! grep -q 'command! -bar -bang Q quit<bang>' $HOME/.vimrc; then
     echo -e $'command! -bar -bang Q quit<bang>' >> $HOME/.vimrc
 fi
-:
 
+#define capital Wq to quit
+if ! grep -q 'command! -bang -nargs=? -complete=file Wq wq<bang> <args>' $HOME/.vimrc; then
+    echo -e $'command! -bang -nargs=? -complete=file Wq wq<bang> <args>' >> $HOME/.vimrc
+fi
+
+#define capital WQ to quit
+if ! grep -q 'command! -bang -nargs=? -complete=file WQ wq<bang> <args>' $HOME/.vimrc; then
+    echo -e $'command! -bang -nargs=? -complete=file WQ wq<bang> <args>' >> $HOME/.vimrc
+fi
