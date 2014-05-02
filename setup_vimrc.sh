@@ -32,4 +32,9 @@ if ! grep -q 'augroup resCur' $HOME/.vimrc; then
     echo -e $'augroup resCur\n  autocmd!\n  autocmd BufWinEnter * call ResCur()\naugroup END' >> $HOME/.vimrc
 fi
 
+#define capital Q to quit
+if ! grep -q 'command! -bar -bang Q quit<bang>' $HOME/.vimrc; then
+    echo -e $'command! -bar -bang Q quit<bang>' >> $HOME/.vimrc
+fi
+:
 
