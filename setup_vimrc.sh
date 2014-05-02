@@ -25,7 +25,7 @@ fi
 if ! grep -q 'function! ResCur()' $HOME/.vimrc; then
     echo -ne 'function! ResCur\(\)\n  if line\("\'
     echo -ne "'" 
-    echo -ne ' \"") <= line("$")\n    normal! g`"\n    return 1\n  endif\nendfunction' >> $HOME/.vimrc
+    echo -e ' \"") <= line("$")\n    normal! g`"\n    return 1\n  endif\nendfunction' >> $HOME/.vimrc
 fi
 
 
