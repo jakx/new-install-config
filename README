@@ -11,6 +11,7 @@ clone and run from the cloned directory 'make install' to install
     2) sets up vimrc 
         *modifies tab to be four spaces
         *restores cursor on a previously edited file
+        *causes :Wq. :WQ, and :Q to exit and/or save
 
     3) enables ctrl alt backspace to kill x for an ubuntu derivative operating system
     
