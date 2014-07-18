@@ -22,3 +22,9 @@ fi
 if ! grep -q 'alias pscpu=' $HOME/.bashrc ; then
     echo -e "alias pscpu='ps aux | sort -k 3,3'" >> $HOME/.bashrc
 fi
+
+#alias rm to trash -- sudo apt-get install trash-cli
+if ! grep -q 'alias rm=trash' $HOME/.bashrc ; then
+    echo -e "alias rm=trash" >> $HOME/.bashrc
+fi
+
