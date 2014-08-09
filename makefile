@@ -11,4 +11,8 @@ setup_vimrc:
 setup_bashrc:
 	./setup_bashrc.sh
 
-install: setup_bashrc setup_vimrc add_ctrl_alt_bk 
+setup_xmodmap:
+	touch ~/.Xmodmap
+	./setup_Xmodmap.sh
+
+install: setup_bashrc setup_vimrc add_ctrl_alt_bk setup_xmodmap
