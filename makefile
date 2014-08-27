@@ -1,5 +1,5 @@
-add_ctrl_alt_bk:
-	./add_ctrl+alt+bk.sh
+remap_keymap:
+	./remap_keymap.sh
 
 setup_vimrc:
 	./setup_vimrc.sh
@@ -15,4 +15,4 @@ setup_xmodmap:
 	touch ~/.Xmodmap
 	./setup_Xmodmap.sh
 
-install: setup_bashrc setup_vimrc add_ctrl_alt_bk setup_xmodmap
+install: setup_bashrc setup_vimrc remap_keymap setup_xmodmap
