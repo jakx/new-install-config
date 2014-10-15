@@ -13,6 +13,6 @@ clone and run from the cloned directory 'make install' to install
         *restores cursor on a previously edited file
         *causes :Wq. :WQ, and :Q to exit and/or save
 
-    3) enables ctrl alt backspace to kill x for an ubuntu derivative operating system
+    3) enables ctrl alt backspace to kill x; and remaps Caps Lock to ESC; for any debian derivative OSes.
     
     
