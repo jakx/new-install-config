@@ -23,8 +23,8 @@ fi
 
 #function to restore cursor
 if ! grep -q 'function! ResCur()' $HOME/.vimrc; then
-    echo -ne 'function! ResCur\(\)\n  if line\("\'
-    echo -ne "'" 
+    echo -ne 'function! ResCur\(\)\n  if line\("\' >> $HOME/.vimrc
+    echo -ne "'" >> $HOME/.vimrc
     echo -e ' \"") <= line("$")\n    normal! g`"\n    return 1\n  endif\nendfunction' >> $HOME/.vimrc
 fi
 
