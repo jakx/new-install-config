@@ -4,9 +4,9 @@ remap_keymap:
 setup_vimrc:
 	./setup_vimrc.sh
 	unzip yankring_180.zip
-	mkdir -p .vim/plugin
-	mv doc .vim/
-	mv plugin/* .vim/plugin/
+	mkdir -p ~/.vim/plugin
+	mv ./doc ~/.vim/
+	mv ./plugin/* ~/.vim/plugin/
 
 setup_bashrc:
 	./setup_bashrc.sh
